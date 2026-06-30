@@ -80,12 +80,7 @@ nav {
 .hero-line {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
 }
-.hero-line::before {
-  content: '';
-  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-  width: 1px; height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
-}
+.hero-line::before { display: none; }
 .hero-line::after {
   content: '';
   position: absolute; inset: 0;
@@ -402,7 +397,7 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Car<b>Land</b></a>
+  <a href="#" class="nav-logo"><img src="/logo.png" alt="CarLand" style="height:32px;width:auto;display:block;"></a>
   <ul class="nav-links">
     <li><a href="#features">Возможности</a></li>
     <li><a href="#how">Как работает</a></li>
@@ -419,7 +414,7 @@ footer {
 <section class="hero">
   <div class="hero-line"></div>
   <div class="hero-inner">
-    <img src="logo.png" alt="CarLand" style="max-width:320px;width:100%;margin-bottom:36px;">
+    <img src="/logo.png" alt="CarLand" style="max-width:320px;width:100%;margin-bottom:36px;">
 
     <div class="hero-actions">
       <a href="https://play.google.com/store/apps/details?id=com.carland.learn" class="btn-red" target="_blank">
@@ -751,7 +746,7 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <a href="#" class="footer-logo">Car<b>Land</b></a>
+    <a href="#" class="footer-logo"><img src="/logo.png" alt="CarLand" style="height:28px;width:auto;display:block;"></a>
     <div class="footer-links">
       <a href="#features">Возможности</a>
       <a href="#install">Установка</a>
